@@ -14,7 +14,7 @@ This project analyzes car prices to identify outliers based on the interquartile
 
 ## Requirements
 
-- **JDK 8+**
+- **JDK 22+**
 - **Gradle/Maven** (optional)
 
 ## How to Build and Run
