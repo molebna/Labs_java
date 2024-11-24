@@ -1,18 +1,51 @@
-## Getting Started
+# Annotation and reflection in Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+### Author: Molebna Maria
 
-## Folder Structure
+## Description
 
-The workspace contains two folders by default, where:
+This project implements a set of operations (Create, Read, Update, Delete) for arbitrary annotated objects using Java. It demonstrates the functionality of these operations using reflection and non-reflection-based approaches.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Features
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- Reflection-based CRUD operations for dynamic object-to-database field mappings.
+- Manual CRUD implementation for comparison of reflection performance.
+- Time measurement for CRUD operations with and without reflection.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Requirements
 
-## Dependency Management
+- **JDK 11+**
+- **Gradle/Maven** (optional)
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## How to Build and Run
+
+### Using Command Line
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/molebna/Labs_java.git
+    cd Labs_java/Lab2
+    ```
+
+2. Compile:
+    ```bash
+    javac -d bin src/App.java
+    ```
+
+3. Run:
+    ```bash
+    java -cp bin App
+    ```
+
+### Using Gradle
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/molebna/Labs_java.git
+    cd Labs_java/Lab2
+    ```
+
+2. Build and run:
+    ```bash
+    ./gradlew run
+    ```
