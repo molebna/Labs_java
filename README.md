@@ -1,18 +1,53 @@
-## Getting Started
+# Annotation and Code Generation in Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+### Author: Molebna Maria
 
-## Folder Structure
+## Description
 
-The workspace contains two folders by default, where:
+This project implements a framework for generating SQL queries (Create, Read, Update, Delete) for arbitrary objects in Java, utilizing a mapping of object fields to database columns. It avoids reflection to maintain high performance and provides a type-safe and extensible solution for SQL generation.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Features
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- Field-to-Column Mapping: Allows manual mapping of object fields to database table columns.
+- Type-Safe SQL Generation: Supports automatic handling of text and numeric fields for proper SQL formatting.
+- Customizable Generators: Easily extendable for different domain classes (e.g., User, Cat, Product).
+- Manual Implementation: Avoids reflection for better performance and clarity.
+- Demonstration Classes: Includes three distinct example classes to showcase CRUD operations.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Requirements
 
-## Dependency Management
+- **JDK 11+**
+- **Gradle/Maven** (optional)
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## How to Build and Run
+
+### Using Command Line
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/molebna/Labs_java.git
+    cd Labs_java/Lab3
+    ```
+
+2. Compile:
+    ```bash
+    javac -d bin src/App.java
+    ```
+
+3. Run:
+    ```bash
+    java -cp bin App
+    ```
+
+### Using Gradle
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/molebna/Labs_java.git
+    cd Labs_java/Lab3
+    ```
+
+2. Build and run:
+    ```bash
+    ./gradlew run
+    ```
